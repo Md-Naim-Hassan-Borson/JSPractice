@@ -22,4 +22,21 @@ document.querySelector(".pclass").innerHTML = "This text is again changed too.";
 
 // for tagName =("p") we have to only write the tag name
 
-document.querySeletor("h2")[1].innerHTML = "This Heading tag is also changed bro";
+document.querySelector("h2").innerHTML = "This Heading tag is also changed bro";
+
+
+
+
+
+
+document.querySelector("a").innerHTML = "Welcome Home";
+document.querySelector("ul li a").innerHTML = "Blogpost";
+
+// document.querySelector("div a").innerHTML = "Catalog";
+document.querySelector(".my-div a").innerHTML = "Footer";
+
+
+//QuerySelectorAll() Method:
+document.querySelectorAll("p")[3].innerHTML = "Hello Bangladesh What's up Polapain";
+
+
