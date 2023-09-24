@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 One Dimensional Array</title>
+</head>
+<body>
+    <script>
+        // One Dimensional Array
+        // Create a function called highestScore that 
+        // Receive a 1d array called scores
+        // Return the highest score
+        console.clear();
+
+        function highestScore(score){
+            let max = scores[0];
+            for (var i = 1; i < scores.length; i++) {
+                if (max < scores[i]){
+                    max = scores[i];
+                }
+            }
+            return max;
+        }
+
+        var scores = [25, 20, 80, 150, 888, 1000000];
+        var maxScore = highestScore(scores);
+        console.log(maxScore);
+    </script>
+</body>
+</html>

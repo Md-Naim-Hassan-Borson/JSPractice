@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational And Logical Operator in JS</title>
+</head>
+<body>
+    <script>
+        // Relational Operator ->  >, >=, <, <=, == , ===, !=, !==   relational operator always true or false value return kore
+
+        var num1 = 20;
+        var num2 = 25;
+        console.log(num1 > num2);
+        console.log(num1>=num2);
+        console.log(num2>=num1);
+        console.log(num1 < num2);
+
+        num1 = 20;
+        num2 = 20;
+
+        console.log(num1 == num2);
+
+        console.log(20 == "20")// number == string it check both value is equal or not.
+        console.log(20 === "20") // === it check if the data type and value both are same or not.
+
+        console.log(21 != "20")// number == string it check both value is equal or not.
+        console.log(21 !== "20") // === it check if the data type and value both are same or not.
+
+
+
+        // Logical Operator ->  &&, ||, !
+        num1 = 50;
+        num2 = 30;
+        var num3 = 20;
+
+        console.log(num1 > num2 && num1 > num3); // it return true if both condition is true.
+        
+        console.log(num1 > num2 && num3 > num1); 
+
+        console.log(num1 > num2 || num1 > num3);//it return true if anyone of the condition is true.
+        console.log(num1 > num2 || num3 > num1);
+        
+
+        console.log(!true);
+        console.log(!false);
+        console.log(!(25 > 22));
+        console.log(!(25 < 22));
+    </script>
+</body>
+</html>

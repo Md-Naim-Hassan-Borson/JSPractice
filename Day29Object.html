@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JS</title>
+</head>
+<body>
+    <script>
+        // Student Details:
+        var name = "Naim Hassan";
+        var age = 25;
+        var CGPA = 3.92;
+        var lang = ["Bangali", "Hindi", "English"];
+        console.log(name);
+
+
+
+        //Creating an Object:
+        var studentDetails1={
+            name : "Polash",
+            age : 25,
+            CGPA : 3.50,
+            lang : ["Bangali", "French", "English"]
+        };
+
+        var studentDetails2={
+            name : "Naim Hassan",
+            age : 23,
+            CGPA : 3.20,
+            lang : ["Bangali", "Hindi", "English"]
+        };
+
+        var studentDetails3={
+            name : "Neler Trkfind",
+            age : 28,
+            CGPA : 3.60,
+            lang : ["Portiguese", "Hindi", "English"]
+        };
+
+        var studentDetails4={
+            name : "Nikita thakker",
+            age : 27,
+            CGPA : 3.70,
+            lang : ["Marti", "Roman", "English"]
+        };
+        console.log(studentDetails1.name, studentDetails1.CGPA, studentDetails1.age, studentDetails1.lang);
+
+        console.log(studentDetails2.name, studentDetails2.CGPA, studentDetails2.age, studentDetails2.lang);
+
+        console.log(studentDetails3.name, studentDetails3.CGPA, studentDetails3.age, studentDetails3.lang);
+
+        console.log(studentDetails4.name, studentDetails4.CGPA, studentDetails4.age, studentDetails4.lang);
+
+
+
+        // Another way to create an Object using Constructor:
+
+        function Student(name, age, CGPA, lang){
+            this.name = name;
+            this.age = age;
+            this.CGPA = CGPA;
+            this.lang = lang;
+
+            // Adding Function inside Constructor:
+            this.displayStudentInfo = function(){
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.CGPA);
+                console.log(this.lang);
+            }
+
+        }
+
+        var student1 = new Student("Naim Hassan", 23, 3.20, ["Bangali", "Hindi", "English"]);
+
+        var student2 = new Student("OVi", 25, 3.40, ["Marthi", "Hindi", "English"]);
+
+        var student3 = new Student("Pavel", 27, 3.60, ["Bangali", "French", "English"]);
+
+        var student4 = new Student("Atik", 23, 2.90, ["Bangali", "Hindi", "English"]);
+
+        var student5 = new Student("Younus", 32, 3.00, ["Urdu", "Arabic", "English"]);
+
+        console.log(student1.name, student1.CGPA, student1.age, student1.lang);
+
+        console.log(student2);
+
+        // Calling the function:
+        student1.displayStudentInfo();
+        student2.displayStudentInfo();
+        student3.displayStudentInfo();
+        student4.displayStudentInfo();
+        student5.displayStudentInfo();
+
+
+
+        // Adding Function inside Constructor:
+
+
+
+    </script>
+</body>
+</html>

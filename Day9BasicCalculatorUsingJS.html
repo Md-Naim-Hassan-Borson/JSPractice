@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using JS</title>
+</head>
+<body>
+
+
+    <script>
+        var num1, num2, sum, sub;
+        num1 = prompt("Enter a number : "); // prompt get string value so we have to convert it into int/float using parseInt/parseFloat.
+        num2 = prompt("Enter a Number : ");
+
+        num1 = parseFloat(num1, 10); // To convert string into float
+        num2 = parseFloat(num2, 10);
+
+        sum = num1 + num2;
+        document.write("<h3>" + "Sum of the two numbers is : " + sum + "</h3>" );
+
+        sub = num1 - num2;
+        document.write("<h3>" +"Subtraction of the two numbers is: "+ sub + "</h3>"+"<br>");
+
+
+
+
+        // Task 1:
+        var x, y, div, mul, mod, sum, sub;
+        x = parseInt((prompt("Enter first number")), 10);
+        y = parseFloat((prompt("Enter Second Number : ")), 10);
+
+        sum = x + y;
+        document.write("Sum of the two numnber is : "+ x + "+" + y + "=" + sum + "<br>");
+
+        sub = x - y;
+        document.write("Subtraction of the two numnber is : " + x + "-" + y + "=" + sub + "<br>");
+
+        mul = x * y;
+        document.write("Multipication of the two numnber is : " + x + "*" + y + "=" + mul + "<br>");
+
+        div = x / y;
+        document.write("Division of the two numnber is : " + x + "/" + y + "=" + div + "<br>");
+
+        mod = x % y;
+        document.write("Modulas of the two numnber is : " + x + "%" + y + "=" + mod + "<br>");
+        
+        
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

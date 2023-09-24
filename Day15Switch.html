@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case in Js</title>
+</head>
+<body>
+    <script>
+        // Digit spelling program:
+
+        // that means if we input 0 then it gives output "one", 2 = "two", 3 = "three". it gives 0-9 but if we input above 9 then it shows not a valid digit.
+        // here we use these keywords: switch, case, break, default.
+
+        var digit = prompt("Enter any digit : ");
+
+        // if(digit == 0)
+        //     console.log("Zero");
+        // else if(digit == 1)
+        //     console.log("One");
+        // else if(digit == 2)
+        //     console.log("Two");
+        // else if(digit == 3)
+        //     console.log("Three");
+        // else if(digit == 4)
+        //     console.log("Four");
+        // else if(digit == 5)
+        //     console.log("Five");
+        // else if(digit == 6)
+        //     console.log("Six");
+        // else if(digit == 7)
+        //     console.log("Seven");
+        // else if(digit == 8)
+        //     console.log("Eight");
+        // else if(digit == 9)
+        //     console.log("Nine");
+        // else
+        //     console.log("This is not a valid digit");
+
+        switch(digit){
+            case "0":
+                document.write("<h1>" + 'Zero' + "</h1>  <br>");
+                break; // we use it to end the program otherwise the program execute the next all cases.
+
+            case "1":
+                document.write("<h1>" + 'One' + "</h1>  <br>");
+                break;
+
+            case "2":
+                document.write("<h1>" + 'Two' + "</h1>  <br>");
+                break;
+
+            case "3":
+                document.write("<h1>" + 'Three' +"</h1> <br>");
+                break;
+
+            case "4":
+                document.write("<h1>" + 'Four' + "</h1>  <br>");
+                break;
+
+            case "5":
+                document.write("<h1>" + 'Five' + "</h1>  <br>");
+                break;
+
+            case "6":
+                document.write("<h1>" + 'Six' + "</h1>  <br>");
+                break;
+
+            case "7":
+                document.write("<h1>" + 'Seven' + "</h1>  <br>");
+                break;
+
+            case "8":
+                document.write("<h1>" + 'Eight' + "</h1>  <br>");
+                break;
+        
+            case "9":
+                document.write("<h1>" + 'Nine' + "</h1>  <br>");
+                break;
+        
+            default: // if the program can not find any case then it execute the default case.
+                document.write("<h1>" + 'Not a digit' + "</h1>  <br>");
+                break;
+        }
+
+
+        // Task - 5 input a letter and check it is vowle or consonent using switch.
+
+        var letter = prompt("Enter a Letter : ");
+        letter = letter.toLowerCase();
+
+        switch(letter){
+            // case "a":
+            //     document.write(letter + " is a Vowle");
+            //     break;
+            // case "e":
+            //     document.write(letter + " is a  Vowle");
+            //     break;
+            // case "i":
+            //     document.write(letter + " is a Vowle");
+            //     break;
+            // case "o":
+            //     document.write(letter + " is a Vowle");
+            //     break;
+            // case "u":
+            //     document.write(letter + " is a Vowle");
+            //     break;
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                document.write(letter + " is a Vowle");
+                break;
+            default:
+                document.write(letter + " is a Consonent");
+                break;
+
+        }
+
+
+    </script>
+</body>
+</html>

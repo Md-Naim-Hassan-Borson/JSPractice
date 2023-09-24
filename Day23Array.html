@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+</head>
+<body>
+    
+    <script>
+        // Array = is an Object, collection of variables.
+
+        // How to create array:
+        var names = new Array(5);
+        names[0] = "Anis";
+        names[1] = "Lima";
+        names[2] = "Shifa";
+        names[3] = "Jamil";
+        names[4] = "Tipu";
+
+        console.log(names[2]);
+        console.log (names[3]);
+        console.log(names);
+
+        //Array size:
+        console.log(names.length);
+
+        // Another way to create array:
+        var names1 = ["Kabir", "Anis", "Srijon", "Affan", "Abrar"];
+        console.log(names1);
+
+        // Array library fuction:
+        // To add a new value into a array:
+        names1.push("Rahman");
+
+
+        // To remove a value from array:
+        names1.pop();
+
+        // Concatination to 2 different array:
+        var country1 = ["Bangladesh", "Nepal", "Bhutan"];
+        var country2 = ["India", "Pakistan", "Afganstan"];
+        var country = country1.concat(country2);
+        console.log(country);
+    </script>
+</body>
+</html>

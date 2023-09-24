@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the grade of a subject program</title>
+</head>
+<body>
+    
+
+    <script>
+        var marks = parseFloat(prompt("Enter your Marks : "));
+        if (marks >= 80)
+            document.write("A+ <br>");
+        else if (marks >= 70)
+            document.write("A <br>");
+        else if (marks >= 60)
+            document.write("A- <br>");
+        else if(marks >= 50)
+            document.write("B <br>");
+        else if (marks >=40)
+            document.write("C <br>");
+        else if (marks >= 33)
+            document.write("D <br>");
+        else
+            document.write("F <br>");
+
+
+        if(marks > 100 || marks <0)
+            console.log("Invalid marks");
+        else if(marks >= 80 && marks <= 100)
+            console.log("A+");
+        else if(marks >= 70 && marks <=79)
+            console.log("A");
+        else if(marks >=60 && marks <= 69)
+            console.log("A-");
+        else if(marks >=50 && marks <= 59)
+            console.log("B");
+        else if(marks >=40 && marks <=49)
+            console.log("C");
+        else if(marks >= 33 && marks <=39)
+            console.log("D");
+        else
+            console.log("Fail  <br>");
+
+
+
+        var num1 = parseFloat(prompt("Enter number1 : "));
+        var num2 = parseFloat(prompt("Enter Number2 : "));
+        var num3 = parseFloat(prompt("Enter Number3 : "));
+
+        if(num1 > num2 && num1 > num3)
+            document.write("Large Numer = " + num1 + "<br>");
+
+        else if(num2 > num1 && num2 > num3)
+            document.write("Large Numer = " + num2 + "<br>");
+        
+        else
+            document.write("Large Number = " + num3 + "<br>");
+
+
+        
+
+        // Find the letter vowel or consonent:
+        var letter = prompt("Enter a Letter : ");
+
+        letter = letter.toLowerCase();
+
+        if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
+            document.write("It's a Vowle");
+        else
+            document.write ("It's Consonant");
+    </script>
+</body>
+</html>

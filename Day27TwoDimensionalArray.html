@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Dimensional Array Task 9</title>
+</head>
+<body>
+    <script>
+
+        // Task-9
+
+        // 2D Array 
+        // Create a function called highestRunScorer that will
+        // Receive a 2d array called playersInfo
+        // Based on highest score, return the name of the player.
+
+        function highestRunScorer(playersScore){
+            
+            var highestScorer = playersInfo[0][0];
+            var highestScore = playersInfo[0][1];
+            for(var i = 1; i < playersInfo.length; i++){
+                if (highestScore < playersInfo[i][1]){
+                    highestScore = playersInfo[i][1] ;
+                    highestScorer = playersInfo[i][0];
+                }
+            }
+
+
+            return highestScorer;
+
+        }
+
+        
+        var playersInfo = [
+            ["Noman", 99],
+            ["Mash", 20],
+            ["Tamim", 146],
+            ["Shakib", 75],
+            ["Mushfique", 102],
+        ];
+
+
+       var name =  highestRunScorer(playersInfo);
+       console.log(name);
+
+
+       var numberArr = [
+        [10, 20, 60],
+        [8, 10, 52],
+        [15, 5, 24],
+        [26, 28, 43],
+        [12, 16, 51]
+       ];
+
+       var sum = 0;
+       numberArr.forEach((row) => {
+        row.forEach((element) => {
+            sum += element;
+        });
+       });
+
+       console.log("The sum of all elements in the array is:" + sum);
+
+
+       let MathScore = [
+            ["John Doe", 20, 60, "A"],
+            ["Jane Doe", 10, 52, "B"],
+            ["Petr Chess", 5, 24, "F"],
+            ["Ling Jess", 28, 43, "A"],
+            ["Ben Liard", 16, 51, "B"]
+        ];
+
+        MathScore.push(["Tom Right", 30, 32, "B"]);
+
+        MathScore.unshift(["Alice George", 28, 62, "A"]);
+        console.table(MathScore);
+
+
+
+        let MathSscore = [
+            ["John Doe", 20, 60, "A"],
+            ["Jane Doe", 10, 52, "B"],
+            ["Petr Chess", 5, 24, "F"],
+            ["Ling Jess", 28, 43, "A"],
+            ["Ben Liard", 16, 51, "B"]
+        ];
+
+        MathSscore.forEach((score) => {
+          let totalScore = score[1] + score[2];
+          score.push(totalScore);
+        });
+
+        console.log(MathSscore);
+
+
+        let arr = [];
+        let rows = 4;
+        let columns = 3;
+
+        let value = 0;
+        // creating two-dimensional array
+        for (let i = 0; i < rows; i++) {
+            arr[i] = [];
+            for (let j = 0; j < columns; j++) {
+                arr[i][j] = value++;
+            }
+        }
+
+        console.log(arr);
+    </script>
+</body>
+</html>

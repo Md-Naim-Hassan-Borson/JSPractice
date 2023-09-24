@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    
+
+    <script>
+        //creating a function: for fixed number
+        function square1(){
+            var num = 5;
+            var result = num * num;
+            document.write("Result = " + result + "<br>");
+        }
+
+        // calling a fucntion:
+        square1();
+        square1();
+
+
+
+
+
+        // creating a function: for any number we want
+        function square(num){
+            var result = num * num;
+            document.write("Square of " + num + " = " + result + "<br>")
+        }
+
+        // calling a fucntion:
+        square(4);
+        square(5);
+
+
+
+
+
+        // Use of double parameter:
+
+        function mul(num1, num2){
+            var result = num1 * num2;
+            document.write("Multiplication of " + num1+  "&" + num2 + " = " + result + "<br>");
+        }
+
+        // calling a fucntion:
+        mul(4, 5);
+        mul(20, 10);
+        mul(5, 3);
+
+
+
+        // How to return a value from a function:
+
+
+        //create a function:
+        function mul1(num1, num2){
+            var result = num1 * num2;
+            return result; // return the value in mul1() function
+        }
+
+        // calling a fucntion:
+        // returned value can be seen as output:
+        document.write("Multiplication value is = " + mul1(4, 5) + "<br>");
+
+        var x = mul1(6, 8);// returned value stored in "x"
+        document.write("Multiplication value is = " + x + "<br>");//  print the returned value from "x".
+        
+
+
+        // // Addition function:
+        
+        // function add(x,y){
+        //     var res = x + y;
+        //     documnent.write("Sum = " + res + "<br>");
+        // }
+
+        // // Subtraction function:
+        // function sub(x,y){
+        //     var res = x - y;
+        //     document.write("Sub = " + res + "<br>");
+        // }
+
+        // add(20, 30);
+        // add(500, 500);
+        // sub(100, 50);
+
+
+        function addition(X, Y){
+           var result = X + Y;
+           document.write("Sum = " + result + "<br>");
+        }
+
+        function subtraction(x, y){
+           var result= x-y ;
+           document.write ("sub = " + result +"<br>");
+        }
+        
+        addition(20, 30);
+        addition(500, 500);
+        subtraction(500, 250);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & Continue Keyword in JS</title>
+</head>
+<body>
+
+
+    <script>
+        // print 1-10 from 100 input using break keyword:
+        for(var i = 1; i <= 100 ; i++){
+            if(i == 11){ // here condition match in 11. so 11 will not be printed. it get 11 so the loop break down after getting 10 for the "break keyword"
+                break;
+            }
+            // Here condition is checked then the value is printed.
+            document.write(" " + i);
+        }
+        document.write("<br>");
+
+
+        for(var i = 1; i <= 100 ; i++){
+            // Here the value is printed then condition is checked.so 11 will also be printed.
+            document.write(" " + i);
+
+
+            if(i == 11){ // here condition match in 11. but we print the value first so 11 will be printed. it get 11 so the loop break down after getting 11 for the "break keyword"
+                break;
+            }
+            
+        }
+        document.write("<br>");
+
+
+        // Continue Keyword:
+        for(var i = 1; i <= 100 ; i++){
+            if(i == 11){ // here condition match in 11. so 11 will not be printed because of continue keyword it send the number to the loop again without ececuting the next line(that is the documnet.write). 
+            // In continue keyword if the condition is matched then that part is not execute next line rather it goes back to the loop and continue the loop .
+                continue;
+            }
+            // Here condition is checked then the value is printed.
+            document.write(" " + i);
+        }
+        document.write("<br>");
+
+        // Print odd number:
+        for(var i = 1; i <= 100 ; i++){
+            if(i % 2 == 0){  
+            // In continue keyword if the condition is matched then that part is not execute next line rather it goes back to the loop and continue the loop .
+            // Here which values are true for the condition those values are not be printed.
+                continue;
+            }
+            // Here condition is checked then the value is printed.
+            document.write(" " + i);
+        }
+        document.write("<br>");
+
+        //Print even Number:
+        for(var i = 1; i <= 100 ; i++){
+            if(i % 2 != 0){ 
+            // In continue keyword if the condition is matched then that part is not execute next line rather it goes back to the loop and continue the loop .
+            // Here which values are true for the condition those values are not be printed.
+                continue;
+            }
+            // Here condition is checked then the value is printed.
+            document.write(" " + i);
+        }
+        document.write("<br>");
+
+
+
+
+
+
+      
+
+    </script>
+</body>
+</html>
