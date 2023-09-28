@@ -10,6 +10,7 @@ studentA.innerHTML = "Md. Naim Hassan Borson";
 
 // Using Childern:
 const StudentB = studentList.children[1];
+const StudentC = studentList.children[2];
 StudentB.innerHTML = "Rofiq";
 
 
