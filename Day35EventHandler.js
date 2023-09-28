@@ -34,3 +34,20 @@ function image(){
 function image1(){
     MyImage.src = "Images/pic1.jpg";
 }
+
+
+
+// Practice:
+
+var link = document.getElementById("aid");
+
+link.innerHTML = "Study with naim";
+
+link.style.textDecoration = "none";
+link.style.alignItems = "Center";
+link.style.fontFamily = "monospace";
+link.style.color = "SlateBlue";
+link.style.fontSize = "3vw";
+
+
+link.href = "https://www.w3schools.com";
