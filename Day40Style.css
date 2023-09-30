@@ -1,0 +1,16 @@
+.btn{
+    color: aquamarine;
+    background: #000;
+    font-size: large;
+}
+
+.my-style{
+    color: tomato;
+    font-size: 3rem;
+}
+
+.p:hover{
+    color:#f48c1b ;
+    font-weight: bolder;
+    background-color: #cacac8 ;
+}

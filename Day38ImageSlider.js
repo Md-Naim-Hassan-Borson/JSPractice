@@ -21,7 +21,7 @@ function next(){
 
 function prev(){
     count--;
-    if(count< 0){
+    if(count < 0){
         count = photos.length-1;
         img.src = photos[count];
     }else{
