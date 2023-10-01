@@ -1,0 +1,8 @@
+.myBtn{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(170, 235, 170);
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+}
